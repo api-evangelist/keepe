@@ -1,7 +1,17 @@
 aid: keepe
 name: Keepe
-description: Keepe is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Keepe operates a US nationwide service-provider network of vetted technicians
+  covering HVAC, plumbing, electrical, furnace and heating, air conditioning,
+  home appliances, and EV charger installation and repair. The platform
+  streamlines the full home-services workflow end to end - recruiting, sourcing,
+  dispatching, authorizing, and paying qualified technicians - so property
+  managers, warranty companies, and insurers can get high-quality repair work
+  completed reliably across markets. Keepe runs a consumer/technician mobile app
+  and a private application backend at api.keepe.com; it does not publish a
+  public developer API, developer portal, or API documentation. This profile was
+  surfaced as a Techstars portfolio company and enriched by the API Evangelist
+  pipeline with the infrastructure signals that are publicly observable.
 url: https://raw.githubusercontent.com/api-evangelist/keepe/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +19,31 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://keepe.com/favicon-192.png
 tags:
 - Company
+- Home Services
+- Field Service
+- Property Management
+- HVAC
+- Plumbing
+- Electrical
+- Marketplace
+- Techstars
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,10 @@ maintainers:
 common:
 - type: Website
   url: https://keepe.com/
+- type: DomainSecurity
+  url: security/keepe-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
